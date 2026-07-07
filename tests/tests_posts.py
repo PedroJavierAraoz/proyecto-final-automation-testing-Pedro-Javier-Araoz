@@ -62,6 +62,23 @@ def test_get_posts():
     if not paso_len:
         logger.error(f"El test falló, no hay datos {len(posts)}")
 
+
+def test_create_post(post_data):
+    expected_code=200
+
+    logger.info("Creo un nuevo post")
+
+    response = api.create_post(
+        post_data['title'], 
+        post_data['body'], 
+        post_data['userId']
+        )
+    pass_create= check.equal(expected_code, response.status_code, "status incorrecto")
+    if not  pass_create:
+        logger.error(f"El test falló, status {response.status_code}")
+
+    
+
   
 
 

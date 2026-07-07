@@ -32,3 +32,7 @@
 2026-07-06 00:11:46,436 INFO utils.logger -obteniendo un post
 2026-07-06 00:11:47,803 ERROR utils.logger - El test falló por : No coincide  el id del post en el test
 2026-07-06 00:51:17,106 INFO utils.logger -obteniendo todos los posts
+2026-07-06 22:03:42,961 INFO utils.logger -Creo un nuevo post
+2026-07-06 22:10:04,283 INFO utils.logger -Creo un nuevo post
+2026-07-06 22:12:01,357 INFO utils.logger -Creo un nuevo post
+2026-07-06 22:12:24,752 ERROR utils.logger -El test falló, status 201

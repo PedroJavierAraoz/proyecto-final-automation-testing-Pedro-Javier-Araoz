@@ -12,12 +12,27 @@ class PostApi ():
     
     def get_posts(self):
         return requests.get(
-            f"{self.URL_BASE}/users"
+            f"{self.URL_BASE}/posts"
         )
     
-a= PostApi()
-a.get_one_post(10)
-# b=a.get_posts()
-# print(b.headers)
+    def create_post(self, title, body, user_id):        
+        data= {
+            "title":title,
+            "body":body,
+            "userId": user_id 
+            }
+
+        return requests.post(
+            f"{self.URL_BASE}/posts",
+              json=data
+              )
+
+
+
+
+# a= PostApi()
+# a.get_one_post(10)
+# # b=a.get_posts()
+# # print(b.headers)
         
     
